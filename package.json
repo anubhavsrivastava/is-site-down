@@ -1,0 +1,22 @@
+{
+	"name": "is-site-down",
+	"version": "0.0.1",
+	"description": "Checks if a website is down for everyone",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/anubhavsrivastava/is-site-down.git"
+	},
+	"author": {
+		"name": "Anubhav Srivastava",
+		"email": "anubhav.srivastava00@gmail.com"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/anubhavsrivastava/is-site-down/issues"
+	},
+	"homepage": "https://github.com/anubhavsrivastava/is-site-down#readme"
+}
