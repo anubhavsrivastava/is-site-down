@@ -23,23 +23,25 @@ yarn add is-site-down
 
 ### Usage
 
-<!-- const { grabFavicon } = require('favicongrab');
+```js
+const { isSiteUp } = require('./dist/index');
 
-grabFavicon('https://about.theanubhav.com').then((response)=>{console.log(response)})
+isSiteUp('https://about.theanubhav.com').then(console.log);
+```
 
 Above call returns following `response`
 
-{ domain: 'about.theanubhav.com',
-    icons: [ {
-        src: 'https://about.theanubhav.com/favicon.ico',
-    type: 'image/x-icon'
-    } ]
-} -->
+```json
+{
+	"host": "about.theanubhav.com",
+	"isitdown": false,
+	"response_code": 200
+}
+```
 
 ### API Specification
 
-<!--
-#### `grabFavicon`
+#### `isSiteUp`
 
 -   returns - Promise
 -   arguments - siteUrl // e.g theanubhav.com
@@ -48,26 +50,23 @@ Above call returns following `response`
 
 1.  Success :
 
-        { domain: 'about.theanubhav.com',
-            icons: [ {
-                src: 'https://about.theanubhav.com/favicon.ico',
-                type: 'image/x-icon'
-            } ]
+        {
+            "host": "about.theanubhav.com",
+            "isitdown": false,
+            "response_code": 200
         }
 
 Description properties of icon object:
 
--   property src contains an absolute URL for a favicon image and is required and unique;
--   property type equals an [MIME-type](https://en.wikipedia.org/wiki/Media_type)'s favicon image;
--   property sizes contains size's favicon image and in a simple case has the following format: HEIGHTxWIDTH in pixels.
+-   "host" - string, URL which was queried for status
+-   "isitdown" : Boolean, whether site was down
+-   "response_code", number, response returned by server
 
 2. Failure :
 
 All error messages have the following format
 
-    {
-        "error": "Unresolved domain name."
-    } -->
+    { error: 'Too many requests to the same site.' }
 
 ### Reference
 
