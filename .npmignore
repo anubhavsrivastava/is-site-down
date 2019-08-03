@@ -3,3 +3,4 @@ index.js
 webpack.config.js
 .gitignore
 sample.js
+.travis.yml
