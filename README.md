@@ -23,18 +23,18 @@ yarn add is-site-down
 
 ### Usage
 
-    <!-- const { grabFavicon } = require('favicongrab');
+<!-- const { grabFavicon } = require('favicongrab');
 
-    grabFavicon('https://about.theanubhav.com').then((response)=>{console.log(response)})
+grabFavicon('https://about.theanubhav.com').then((response)=>{console.log(response)})
 
 Above call returns following `response`
 
-    { domain: 'about.theanubhav.com',
-      icons: [ {
-          src: 'https://about.theanubhav.com/favicon.ico',
-        type: 'image/x-icon'
-        } ]
-    } -->
+{ domain: 'about.theanubhav.com',
+    icons: [ {
+        src: 'https://about.theanubhav.com/favicon.ico',
+    type: 'image/x-icon'
+    } ]
+} -->
 
 ### API Specification
 
@@ -71,8 +71,7 @@ All error messages have the following format
 
 ### Reference
 
-<!--
-`favicongrab` uses HTTP API from [favicongrabber](https://favicongrabber.com). Refer service API reference [here](https://favicongrabber.com/service-api-reference). -->
+`is-site-down` uses HTTP API from [isitdown.site](https://isitdown.site). Refer service API sample [here](https://isitdown.site/api/v3/google.com).
 
 ### Environment
 
@@ -80,7 +79,7 @@ Currently, `is-site-down` is supported for Nodejs Environment only. Please open 
 
 ### Related Module
 
--   [favicon-downloader-cli](https://github.com/anubhavsrivastava/is-site-down-cli) CLI for is-site-down module
+-   [is-site-down-cli](https://github.com/anubhavsrivastava/is-site-down-cli) CLI for is-site-down module
 
 ### Contribution
 
