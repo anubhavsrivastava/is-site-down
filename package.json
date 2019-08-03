@@ -2,9 +2,11 @@
 	"name": "is-site-down",
 	"version": "0.0.1",
 	"description": "Checks if a website is down for everyone",
-	"main": "index.js",
+	"main": "dist/index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "webpack --watch",
+		"build": "webpack"
 	},
 	"repository": {
 		"type": "git",
@@ -18,5 +20,20 @@
 	"bugs": {
 		"url": "https://github.com/anubhavsrivastava/is-site-down/issues"
 	},
-	"homepage": "https://github.com/anubhavsrivastava/is-site-down#readme"
+	"homepage": "https://github.com/anubhavsrivastava/is-site-down#readme",
+	"dependencies": {
+		"axios": "^0.19.0",
+		"axios-data-unpacker": "^1.0.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.4.4",
+		"@babel/core": "^7.4.5",
+		"@babel/plugin-transform-arrow-functions": "^7.2.0",
+		"@babel/plugin-transform-runtime": "^7.4.4",
+		"@babel/preset-env": "^7.4.5",
+		"@babel/runtime": "^7.4.5",
+		"babel-loader": "^8.0.6",
+		"webpack": "^4.32.2",
+		"webpack-cli": "^3.3.2"
+	}
 }
