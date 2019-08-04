@@ -44,7 +44,7 @@ const getAPIUrl = site => {
 	return `${host}${path}${route.v3}/${extractDomain(site)}`;
 };
 
-const isSiteUp = site => {
+const isSiteDown = site => {
 	return axios
 		.get(getAPIUrl(site))
 		.then(d => {
@@ -54,5 +54,5 @@ const isSiteUp = site => {
 		.catch(e => (e.response ? e.response.data : e));
 };
 
-export default isSiteUp;
-export { isSiteUp };
+export default isSiteDown;
+export { isSiteDown };

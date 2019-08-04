@@ -24,9 +24,9 @@ yarn add is-site-down
 ### Usage
 
 ```js
-const { isSiteUp } = require('is-site-up');
+const { isSiteDown } = require('is-site-down');
 
-isSiteUp('https://about.theanubhav.com').then(console.log);
+isSiteDown('https://about.theanubhav.com').then(console.log);
 ```
 
 Above call returns following `response`
@@ -41,7 +41,7 @@ Above call returns following `response`
 
 ### API Specification
 
-#### `isSiteUp`
+#### `isSiteDown`
 
 -   returns - Promise
 -   arguments - siteUrl // e.g theanubhav.com

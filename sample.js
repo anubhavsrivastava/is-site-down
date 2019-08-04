@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
-const { isSiteUp } = require('./dist/index');
+const { isSiteDown } = require('./dist/index');
 
-isSiteUp('https://about.theanubhav.com')
+isSiteDown('https://about.theanubhav.com')
 	.then(console.log)
 	.catch(console.log);
