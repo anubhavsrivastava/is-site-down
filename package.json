@@ -1,6 +1,6 @@
 {
 	"name": "is-site-down",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Checks if a website is down for everyone",
 	"main": "dist/index.js",
 	"scripts": {
