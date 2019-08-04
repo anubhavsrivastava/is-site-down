@@ -24,7 +24,7 @@ yarn add is-site-down
 ### Usage
 
 ```js
-const { isSiteUp } = require('./dist/index');
+const { isSiteUp } = require('is-site-up');
 
 isSiteUp('https://about.theanubhav.com').then(console.log);
 ```
